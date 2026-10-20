@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vote Lusekelo Kawole for Events Director</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #14213d;
+    --door: #f2b705;
+    --paper: #faf8f2;
+    --ink: #1d2433;
+    --muted: #5b6475;
+    --line: #e2ddd0;
+    --head: "Bricolage Grotesque", "Segoe UI", Arial, sans-serif;
+    --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 1.08rem; line-height: 1.7; }
+  img { max-width: 100%; display: block; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--door); outline-offset: 3px; }
+
+  /* Hero: photo first, then introduction */
+  .hero { background: var(--navy); color: #fff; }
+  .hero-inner { max-width: 960px; margin: 0 auto; display: grid; grid-template-columns: 1fr; }
+  .photo { background: var(--door); }
+  .photo img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center 30%; }
+  .intro { padding: 2rem 1.5rem 3rem; }
+  .intro h1 { font-family: var(--head); font-weight: 800; font-size: clamp(2.2rem, 8vw, 3.8rem); line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 1rem; }
+  .intro h1 span { color: var(--door); }
+  .intro p { max-width: 60ch; color: #dfe3ec; margin-bottom: 1rem; }
+  .intro .slogan { font-family: var(--head); font-weight: 700; color: var(--door); font-size: 1.15rem; }
+
+  @media (min-width: 800px) {
+    .hero-inner { grid-template-columns: 5fr 6fr; align-items: stretch; }
+    .photo img { height: 100%; aspect-ratio: auto; }
+    .intro { padding: 3.5rem 2.5rem; align-self: center; }
+  }
+
+  main { max-width: 760px; margin: 0 auto; padding: 3.5rem 1.5rem 2rem; }
+  main > h2 { font-family: var(--head); font-weight: 800; font-size: clamp(1.7rem, 5vw, 2.3rem); color: var(--navy); line-height: 1.15; margin-bottom: 0.5rem; }
+  .lead { color: var(--muted); margin-bottom: 2.5rem; }
+
+  /* Promises */
+  .promise { border-top: 3px solid var(--navy); padding: 1.5rem 0 2rem; }
+  .promise h3 { font-family: var(--head); font-weight: 700; font-size: 1.35rem; color: var(--navy); margin-bottom: 0.4rem; }
+  .promise p { max-width: 62ch; }
+  .tag { display: inline-block; margin-top: 0.7rem; font-family: var(--head); font-size: 0.85rem; font-weight: 500; background: var(--door); color: var(--navy); padding: 0.15rem 0.7rem; border-radius: 999px; }
+
+  /* Four streams */
+  .streams { background: #fff; border: 1px solid var(--line); border-left: 6px solid var(--door); padding: 1.5rem; margin: 1rem 0 3rem; }
+  .streams h3 { font-family: var(--head); font-size: 1.25rem; color: var(--navy); margin-bottom: 0.8rem; }
+  .streams dl { display: grid; gap: 0.6rem; }
+  .streams dt { font-family: var(--head); font-weight: 700; color: var(--navy); }
+  .streams dd { color: var(--muted); margin-bottom: 0.3rem; }
+  @media (min-width: 640px) {
+    .streams dl { grid-template-columns: 11rem 1fr; column-gap: 1.2rem; }
+    .streams dd { margin-bottom: 0; }
+  }
+
+  /* Closing */
+  .closing { background: var(--navy); color: #fff; text-align: center; padding: 3.5rem 1.5rem; }
+  .closing h2 { font-family: var(--head); font-weight: 800; font-size: clamp(1.8rem, 6vw, 2.8rem); line-height: 1.1; margin-bottom: 0.8rem; }
+  .closing p { max-width: 50ch; margin: 0 auto 1.5rem; color: #dfe3ec; }
+  .vote { display: inline-block; font-family: var(--head); font-weight: 800; font-size: 1.2rem; background: var(--door); color: var(--navy); padding: 0.8rem 2rem; border-radius: 6px; text-decoration: none; }
+  footer { text-align: center; padding: 1.2rem; font-size: 0.9rem; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="photo">
+      <img src="vinjelu.jpg" alt="Vinjelu giving two thumbs up in a sunlit corridor on campus">
+    </div>
+    <div class="intro">
+      <h1>Vote <span>Lusekelo kawole</span> for Events Director</h1>
+      <p>Hello, I am Lusekelo kawole, a student in our department. Information Systems, Information Technology, Cybersecurity and Software Engineering: four programs, one department. I am asking for your vote so that we finally have events that bring all of us together and prepare us for the jobs we are studying for.</p>
+      <p>Below is what I promise to deliver, and I am ready to be held to it.</p>
+      <p class="slogan">One department. Four streams. Real experiences. Trasparency</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <h2>My promises to you</h2>
+  <p class="lead">commitments that you can check at the end of the term.</p>
+
+  <section class="promise">
+    <h3>A department hackathon</h3>
+    <p>A 24-hour build event where mixed teams from all four programs design and code a real solution. Prizes, mentors and certificates for every participant.</p>
+    <span class="tag">All programs</span>
+  </section>
+
+  <section class="promise">
+    <h3>A Capture The Flag competition</h3>
+    <p>A hands-on cybersecurity challenge open to everyone, with beginner-friendly rounds so no one is left out.</p>
+    <span class="tag">All programs</span>
+  </section>
+
+  <section class="promise">
+    <h3>Tech Career Day</h3>
+    <p>Alumni, banks, telecoms and local tech companies come to us. You get to ask about internships, attachments and jobs, and learn how to prepare your CV.</p>
+    <span class="tag">All programs</span>
+  </section>
+
+  <section class="promise">
+    <h3>Field Trips</h3>
+    <p>For years i have never had an opportunity nor heard from other classes that they went for a field trip to appreciate how things in our world are done in the industry.
+      vote for me and this will be done atleast once a month.
+    </p>
+    <span class="tag">All programs</span>
+  </section>
+
+  <section class="promise">
+    <h3>Social and talent day</h3>
+    <p>A relaxed evening of music, comedy, poetry and games so that first-years, finalists and every program get to know each other outside the lecture classes</p>
+    <span class="tag">Community</span>
+  </section>
+
+  <section class="promise">
+    <h3>Transparency</h3>
+    <p>Before each event I will share the plan and budget, and afterwards I will report what was spent. I will also bring in sponsors so events do not depend on your contributions.</p>
+    <span class="tag">Accountability</span>
+  </section>
+
+  
+</main>
+
+<section class="closing">
+   <h2>OPERATION DEBUGGING OUR DEPARTMENT</h2>
+  <h2>Let us build a department we are proud of</h2>
+  <p>Every voice counts, whichever program you are in. Give me your vote and I will give you events worth showing up for.</p>
+  <a class="vote" href="#top">Vote Lusekelo kawole for Events Director</a>
+</section>
+
+<footer>Campaign for Events Director, Department of Information Systems, IT, Cybersecurity and Software Engineering</footer>
+
+</body>
+</html>
